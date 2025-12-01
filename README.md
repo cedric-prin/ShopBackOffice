@@ -287,7 +287,7 @@ Ce projet est sous **licence propriétaire**. Voir le fichier [LICENSE](LICENSE)
 
 Développeur IA & Fullstack (POEI) – Futur DevOps & CDA Bac+3  
 
-🔗 Portfolio : *bientôt public*  
+🔗 Portfolio : https://cedric-prin-portfolio.vercel.app/
 
 🔗 LinkedIn : https://www.linkedin.com/in/cedric-prin-dev/
 
