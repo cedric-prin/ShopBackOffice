@@ -122,7 +122,7 @@
             this.lblGestionCategorie.AutoSize = true;
             this.lblGestionCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionCategorie.ForeColor = System.Drawing.Color.White;
-            this.lblGestionCategorie.Location = new System.Drawing.Point(211, 19);
+            this.lblGestionCategorie.Location = new System.Drawing.Point(204, 21);
             this.lblGestionCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGestionCategorie.Name = "lblGestionCategorie";
             this.lblGestionCategorie.Size = new System.Drawing.Size(417, 54);

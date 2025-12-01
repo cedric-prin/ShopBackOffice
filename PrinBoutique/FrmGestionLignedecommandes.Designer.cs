@@ -140,7 +140,7 @@
             this.lblLignedecommande.AutoSize = true;
             this.lblLignedecommande.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLignedecommande.ForeColor = System.Drawing.Color.White;
-            this.lblLignedecommande.Location = new System.Drawing.Point(127, 21);
+            this.lblLignedecommande.Location = new System.Drawing.Point(122, 21);
             this.lblLignedecommande.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLignedecommande.Name = "lblLignedecommande";
             this.lblLignedecommande.Size = new System.Drawing.Size(629, 54);
