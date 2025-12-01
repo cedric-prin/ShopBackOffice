@@ -35,6 +35,7 @@
             this.fournisseurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lignedecommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblGestionCategorie = new System.Windows.Forms.Label();
             this.pnlCategorie = new System.Windows.Forms.Panel();
             this.lblLibelle = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.dgvListeCategories = new System.Windows.Forms.DataGridView();
             this.lblRechercherCategorie = new System.Windows.Forms.Label();
             this.txtBoxRechercherCategorie = new System.Windows.Forms.TextBox();
-            this.gestionCommandeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripCategorie.SuspendLayout();
             this.pnlCategorie.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListeCategories)).BeginInit();
@@ -110,12 +110,19 @@
             this.produitToolStripMenuItem.Text = "&Produit";
             this.produitToolStripMenuItem.Click += new System.EventHandler(this.produitToolStripMenuItem_Click);
             // 
+            // gestionCommandeToolStripMenuItem
+            // 
+            this.gestionCommandeToolStripMenuItem.Name = "gestionCommandeToolStripMenuItem";
+            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
+            this.gestionCommandeToolStripMenuItem.Text = "Gestion Commande";
+            this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
+            // 
             // lblGestionCategorie
             // 
             this.lblGestionCategorie.AutoSize = true;
             this.lblGestionCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGestionCategorie.ForeColor = System.Drawing.Color.White;
-            this.lblGestionCategorie.Location = new System.Drawing.Point(148, 21);
+            this.lblGestionCategorie.Location = new System.Drawing.Point(211, 19);
             this.lblGestionCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGestionCategorie.Name = "lblGestionCategorie";
             this.lblGestionCategorie.Size = new System.Drawing.Size(417, 54);
@@ -127,7 +134,7 @@
             this.pnlCategorie.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlCategorie.Controls.Add(this.lblGestionCategorie);
             this.pnlCategorie.Location = new System.Drawing.Point(-11, 30);
-            this.pnlCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCategorie.Name = "pnlCategorie";
             this.pnlCategorie.Size = new System.Drawing.Size(853, 96);
             this.pnlCategorie.TabIndex = 2;
@@ -147,7 +154,7 @@
             // txtBoxLibelle
             // 
             this.txtBoxLibelle.Location = new System.Drawing.Point(383, 222);
-            this.txtBoxLibelle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxLibelle.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxLibelle.Name = "txtBoxLibelle";
             this.txtBoxLibelle.Size = new System.Drawing.Size(132, 22);
             this.txtBoxLibelle.TabIndex = 24;
@@ -156,7 +163,7 @@
             // 
             this.btnSupprimerCategorie.BackColor = System.Drawing.Color.Red;
             this.btnSupprimerCategorie.Location = new System.Drawing.Point(579, 401);
-            this.btnSupprimerCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSupprimerCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupprimerCategorie.Name = "btnSupprimerCategorie";
             this.btnSupprimerCategorie.Size = new System.Drawing.Size(139, 44);
             this.btnSupprimerCategorie.TabIndex = 23;
@@ -168,7 +175,7 @@
             // 
             this.btnModifierCategorie.BackColor = System.Drawing.Color.Silver;
             this.btnModifierCategorie.Location = new System.Drawing.Point(579, 277);
-            this.btnModifierCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifierCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.btnModifierCategorie.Name = "btnModifierCategorie";
             this.btnModifierCategorie.Size = new System.Drawing.Size(139, 44);
             this.btnModifierCategorie.TabIndex = 22;
@@ -181,7 +188,7 @@
             this.btnAjouterCategorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAjouterCategorie.ForeColor = System.Drawing.Color.Black;
             this.btnAjouterCategorie.Location = new System.Drawing.Point(579, 149);
-            this.btnAjouterCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAjouterCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.btnAjouterCategorie.Name = "btnAjouterCategorie";
             this.btnAjouterCategorie.Size = new System.Drawing.Size(139, 44);
             this.btnAjouterCategorie.TabIndex = 21;
@@ -193,7 +200,7 @@
             // 
             this.dgvListeCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListeCategories.Location = new System.Drawing.Point(16, 149);
-            this.dgvListeCategories.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvListeCategories.Margin = new System.Windows.Forms.Padding(4);
             this.dgvListeCategories.Name = "dgvListeCategories";
             this.dgvListeCategories.RowHeadersWidth = 51;
             this.dgvListeCategories.Size = new System.Drawing.Size(355, 297);
@@ -215,18 +222,11 @@
             // txtBoxRechercherCategorie
             // 
             this.txtBoxRechercherCategorie.Location = new System.Drawing.Point(383, 357);
-            this.txtBoxRechercherCategorie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxRechercherCategorie.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxRechercherCategorie.Name = "txtBoxRechercherCategorie";
             this.txtBoxRechercherCategorie.Size = new System.Drawing.Size(177, 22);
             this.txtBoxRechercherCategorie.TabIndex = 39;
             this.txtBoxRechercherCategorie.TextChanged += new System.EventHandler(this.txtBoxRechercherCategorie_TextChanged);
-            // 
-            // gestionCommandeToolStripMenuItem
-            // 
-            this.gestionCommandeToolStripMenuItem.Name = "gestionCommandeToolStripMenuItem";
-            this.gestionCommandeToolStripMenuItem.Size = new System.Drawing.Size(154, 24);
-            this.gestionCommandeToolStripMenuItem.Text = "Gestion Commande";
-            this.gestionCommandeToolStripMenuItem.Click += new System.EventHandler(this.gestionCommandeToolStripMenuItem_Click);
             // 
             // FrmGestionCategories
             // 
@@ -245,7 +245,7 @@
             this.Controls.Add(this.pnlCategorie);
             this.Controls.Add(this.menuStripCategorie);
             this.MainMenuStrip = this.menuStripCategorie;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmGestionCategories";
             this.Text = "Gestion de catégories ...";
             this.Load += new System.EventHandler(this.FrmGestionCategories_Load);
