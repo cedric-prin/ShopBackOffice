@@ -184,45 +184,50 @@ L'ensemble des éléments SQL est documenté dans `docs/database`.
 
 ## 📁 Structure du projet
 
-
-
-
-
-
-
-/docs
-
-/assets
-
-gestion_commande.jpg
-
-gestion_client.jpg
-
-gestion_produit.jpg
-
-gestion_categorie.jpg
-
-gestion_fournisseur.jpg
-
-gestion_LigneDeCommande.jpg
-
-
-
-/database
-
-tables.png
-
-procedures.png
-
-fonctions.png
-
-triggers.png
-
-
-
-/src
-
-(Code source C# WinForms)
+```
+/PrinBoutique
+ ├── PrinBoutique/
+ │   ├── FrmConnexion.cs              → Fenêtre de connexion
+ │   ├── FrmDemarrage.cs              → Menu principal / Accueil
+ │   ├── FrmGestionClients.cs         → Gestion des clients
+ │   ├── FrmGestionProduits.cs        → Gestion des produits
+ │   ├── FrmGestionCommandes.cs       → Gestion des commandes
+ │   ├── FrmGestionDeLaCommande.cs    → Détails d'une commande
+ │   ├── FrmGestionLignedecommandes.cs → Gestion des lignes de commandes
+ │   ├── FrmGestionFournisseurs.cs    → Gestion des fournisseurs
+ │   ├── FrmGestionCategories.cs      → Gestion des catégories
+ │   ├── GestionInterface.cs          → Utilitaires d'interface
+ │   ├── Program.cs                   → Point d'entrée
+ │   └── Properties/                  → Propriétés de l'application
+ ├── GestionBD/
+ │   ├── GestionBoutique.cs           → Classe principale de gestion BD
+ │   ├── GestionClients.cs            → Opérations CRUD clients
+ │   ├── GestionProduits.cs           → Opérations CRUD produits
+ │   ├── GestionCommandes.cs          → Opérations CRUD commandes
+ │   ├── GestionLigneDeCommandes.cs   → Opérations CRUD lignes de commandes
+ │   ├── GestionFournisseurs.cs       → Opérations CRUD fournisseurs
+ │   ├── GestionCategories.cs         → Opérations CRUD catégories
+ │   ├── GestionPS.cs                 → Procédures stockées
+ │   └── MysqlConfig.cs               → Configuration MySQL
+ ├── PrinBoutique.Tests/
+ │   └── UnitTest1.cs                 → Tests unitaires
+ ├── docs/
+ │   ├── assets/                      → Captures d'écran de l'application
+ │   │   ├── gestion_commande.jpg
+ │   │   ├── gestion_client.jpg
+ │   │   ├── gestion_produit.jpg
+ │   │   ├── gestion_categorie.jpg
+ │   │   ├── gestion_fournisseur.jpg
+ │   │   └── gestion_LigneDeCommande.jpg
+ │   └── database/                    → Schémas de la base de données
+ │       ├── tables.png
+ │       ├── procedures.png
+ │       ├── fonctions.png
+ │       └── triggers.png
+ ├── PrinBoutique.sln                 → Solution Visual Studio
+ ├── README.md                        → Documentation du projet
+ └── LICENSE                          → Licence du projet
+```
 
 
 
@@ -266,25 +271,7 @@ triggers.png
 
 ## 📄 Licence
 
-
-
-Ce projet est sous **licence propriétaire**.  
-
-Tous droits réservés.
-
-
-
-**Copyright © 2024 Cédric Prin**
-
-
-
-Toute reproduction, distribution ou modification sont interdites sans autorisation.
-
-
-
-Pour toute demande d'utilisation :  
-
-📧 **prin.cedric.34@gmail.com**
+Ce projet est sous **licence propriétaire**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 
 
